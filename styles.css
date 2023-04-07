@@ -12,7 +12,10 @@ body{
     background: hsl(246, 80%, 60%);
     color: white;
     display: flex;
+    position: relative;
     border-radius: 15px;
+    z-index: 10;
+    margin-bottom: -7px;
 }
 
 .profile-img{
@@ -23,17 +26,23 @@ body{
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 2px solid white;
-    margin: 20px 10px;
+    margin: 20px 0;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-.profile p{
-    font-size: 20px;
+.bird{
+    font-size: 13px;
     margin-bottom: -15px;
+    margin-top: 25px;
+    font-weight: 100;
+    color: hsl(236, 100%, 87%);
 }
 
 span{
     color: white;
     font-weight: 400;
+    margin-right: -12px;
 }
 
 .time{
@@ -41,14 +50,22 @@ span{
     justify-content: space-around;
     background: hsl(235, 46%, 20%);
     border-radius: 0 0px 13px 13px;
-    margin-bottom: 20px;
-    margin-top: -7px;
-    z-index: 1;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    z-index: 0;
     color: hsl(236, 100%, 87%);
+    font-size: 13px;
+}
+
+.time p:hover{
+    color: white;
+    cursor: pointer;
 }
 
 #name{
     font-size: 20px;
+    font-weight: 300;
 }
 
 .two .up{
@@ -113,6 +130,11 @@ span{
     color: white;
 }
 
+.down:hover{
+    background-color: hsl(235, 45%, 31%);
+    cursor: pointer;
+}
+
 .head{
     display: flex;
     justify-content: space-between;
@@ -122,6 +144,10 @@ span{
 .head img{
     height: fit-content;
     margin-top: 20px;
+}
+
+.head img:hover{
+    cursor: pointer;
 }
 
 .head p{
@@ -148,7 +174,7 @@ header{
 
 @media (min-width: 1100px){
     .container{
-        margin-top: 60px;
+        margin-top: 160px;
         width: 1100px;
         height: 500px;
         display: grid;
@@ -158,29 +184,44 @@ header{
     } 
 
     .details{
-        height: 310px;
+        height: 365px;
         position: relative;
         display: block;
-        margin-top: -20px;
+        padding-top: 10px;
+        padding-left: 20px;
     }
 
     .profile-img{
-        width: 100px;
-        height: 100px;
-        margin-left: 30px;
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    .bird{
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: -45px;
+        color: hsl(236, 100%, 87%);
     }
 
     #name{
-        font-size: 50px;
+        font-size: 45px;
+        font-weight: 300;
+        margin-top: ;
     }
 
     .time{
         display: block;
-        height: 160px;
+        height: 140px;
         margin-top: -20px;
         padding-left: 30px;
         padding-top: 30px;
         font-size: 18px;
+    }
+
+    #small{
+        margin-left: 10px;
     }
 
     .two{
@@ -194,11 +235,26 @@ header{
 
     .five{
         grid-column: 2;
+        margin-top: 40px;
+    }
+
+    .six, .seven{
+        margin-top: 40px;
     }
 
     .up{
         margin-bottom: -15px;
         height: 60px;
+    }
+
+    .two .up, .three .up, .four .up, .six .up, .seven .up{
+        background-position: 155px -10px;
+        background-size: 70px;
+    }
+
+    .five .up{
+        background-size: 70px;
+        background-position: 155px 0px;
     }
     
     .down{

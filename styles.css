@@ -174,7 +174,7 @@ header{
 
 @media (min-width: 1100px){
     .container{
-        margin-top: 160px;
+        margin-top: 130px;
         width: 1100px;
         height: 500px;
         display: grid;
@@ -184,7 +184,7 @@ header{
     } 
 
     .details{
-        height: 365px;
+        height: 360px;
         position: relative;
         display: block;
         padding-top: 10px;
@@ -213,7 +213,7 @@ header{
 
     .time{
         display: block;
-        height: 140px;
+        height: 130px;
         margin-top: -20px;
         padding-left: 30px;
         padding-top: 30px;
